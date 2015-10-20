@@ -101,9 +101,9 @@ p{line-height: 1.75;
     .primary{
         float:left;
         width: 24%;
-       -webkit-columns-count:2;
-           -moz-columns-count:2;
-           columns-count:2;
+        -webkit-columns-count:2;
+        -moz-columns-count:2;
+        columns-count:2;
         
     }
 
