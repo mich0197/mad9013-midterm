@@ -7,8 +7,11 @@
 html
     {font-family:'Oswald:300',sans-serif, serif; 
         color: rgb(32,100,57);
-        line-height: 1.75; 
+        line-height: 1.75;
+      
   }
+a{  text-decoration: none;}
+
 .left{
     background-image: url("http://lorempixel.com/150/50/cats/")
 }
@@ -41,20 +44,22 @@ html
   padding-bottom:1rem;
 }
 p{line-height: 1.75;
-    
+   
 }
-
+h2,h3{font-family: "oswald:400";
+}
 .mainnav ul{
-  list-style:none;
+    list-style: none;
+    
 }
 
 .mainnav li{
     font-family:'oswald';
     display:block;
     text-align:center;
-    background-color:                     rgb(81,253,144);
-} 
+    
 
+} 
 .footer{
   padding: 1rem 1.5rem;
   font-size: 0.8rem;
@@ -63,20 +68,30 @@ p{line-height: 1.75;
     height: 3rem;
 }
 
-@media all and (min-width: 35em){
-  .mainnav li{
+@media (min-width: 35em){
+  .mainnav ul{
+          background-color:                     rgb(81,253,144);
+  }
+    .mainnav li{
     float:left;
     width: 25%;
+ 
   }
     .masthead { background-image: url("http://lorempixel.com/1000/500/cats/" );
 }
 }
 
 @media (min-width: 35em) and (max-width:60em){
+    
+    .mainnav{
+        background-color:                     rgb(81,253,144);
+      }
     .side{
     padding: 1rem 2rem; 
     float: right; width: 40%;}
-    .primary{float: left; width: 60%;}
+    .primary{
+        float: left; 
+        width: 60%;}
    .footer{float: right;
        
    }
@@ -86,25 +101,28 @@ p{line-height: 1.75;
 @media (min-width:60em){
     .mainnav{
         float: left;
-        width: 24%;
-        margin-right: 10px;
-        background-color:
-        rgb(81,253,144);
+        width: 23%;
+        margin-right:2rem;
         
-    }
-    .mainnav li{
-        display: block;
-        max-width: 15%;
-        max-height: 30%;    
-    
+        background-image: url("http://lorempixel.com/300/300/cats/");
+        
+   }
+    .mainnav li{ float: left;
+    margin-right: 10em;
+    font-size: 25px;
     }
     .primary{
         float:left;
-        width: 24%;
-        -webkit-columns:
-            -moz-columns:
-            columns:300px 2;
-        column-gap: 2rem;
+        width: 49%;
+    }
+a{background-color: transparent;
+    text color:                 rgb(20,200,133);
+}
+    
+   .primary{
+       -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
         
     }
     .side{ 
