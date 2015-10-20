@@ -28,10 +28,9 @@ html
     width: 100%;
     height: 200px;
     font-size:19px;
-    background-image: url("http://lorempixel.com/600/200/cats/") } 
+    background-image: url("http://lorempixel.com/600/200/cats/") 
+} 
 
-        
-}
 .mainnav{
     text-decoration: none;
     padding-left: 40px;
@@ -44,9 +43,11 @@ html
 p{line-height: 1.75;
     
 }
+
 .mainnav ul{
   list-style:none;
 }
+
 .mainnav li{
     font-family:'oswald';
     display:block;
@@ -54,17 +55,12 @@ p{line-height: 1.75;
     background-color:                     rgb(81,253,144);
 } 
 
-.mainnav a:visited{
-  text-decoration:none;
-  display:block;
-  font-size: 1.5rem;
-  text-align:center;}
-
-
 .footer{
   padding: 1rem 1.5rem;
   font-size: 0.8rem;
     background-color: rgb(81,253,144);
+    width: 100%;
+    height: 3rem;
 }
 
 @media all and (min-width: 35em){
@@ -77,22 +73,49 @@ p{line-height: 1.75;
 }
 
 @media (min-width: 35em) and (max-width:60em){
-    .primary{ 
-        padding: 1rem 2rem;}
     .side{
     padding: 1rem 2rem; 
-    float: right;
-    width: 60%;}
+    float: right; width: 40%;}
+    .primary{float: left; width: 60%;}
+   .footer{float: right;
+       
+   }
      .masthead{ 
          background-image: url("http://lorempixel.com/1000/200/cats/") }   
 }
 @media (min-width:60em){
-  .primary{
-    float:left;
-    width: 33.333%;
+    .mainnav{
+        float: left;
+        width: 24%;
+        margin-right: 10px;
+        background-color:
+        rgb(81,253,144);
+        
     }
+    .mainnav li{
+        display: block;
+        max-width: 15%;
+        max-height: 30%;    
+    
+    }
+    .primary{
+        float:left;
+        width: 24%;
+       -webkit-columns-count:2;
+           -moz-columns-count:2;
+           columns-count:2;
+        
+    }
+
+    .side{ 
+        float: right; 
+        width: 24%;}
+    
+    .footer{float: left;
+       
+   }
     .masthead{ 
-         background-image:url("http://lorempixel.com/1400/200/cats/") } 
+         background-image: url("http://lorempixel.com/1400/200/cats/") } 
   }
   
 
