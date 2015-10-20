@@ -101,12 +101,12 @@ p{line-height: 1.75;
     .primary{
         float:left;
         width: 24%;
-        -webkit-columns-count:2;
-        -moz-columns-count:2;
-        columns-count:2;
+        -webkit-columns:
+            -moz-columns:
+            columns:300px 2;
+        column-gap: 2rem;
         
     }
-
     .side{ 
         float: right; 
         width: 24%;}
